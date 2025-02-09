@@ -22,7 +22,7 @@ public class LambdaHandler implements RequestHandler<APIGatewayProxyRequestEvent
 
     public LambdaHandler() {
         if (context == null) {
-            context = SpringApplication.run(DemoApplication.class); // Replace with your main Spring Boot class
+            context = SpringApplication.run(DemoApplication.class);
         }
         userService = context.getBean(UserService.class);
     }
